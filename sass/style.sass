@@ -9,6 +9,18 @@ $color-grey: #E2E2E2
 $background-color: #F0F0F0
 $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 
+@font-face 
+  font-family: Montserrat-Regular
+  src: url(../fonts/Montserrat-Regular.ttf)
+  font-weight: normal
+
+@font-face
+  font-family: Montserrat-SemiBold
+  src: url(../fonts/Montserrat-SemiBold.ttf)
+  font-weight: bold
+
+body
+  font-family: Montserrat-Regular
 .container
  max-width: 1140px
  margin: 0 auto
@@ -50,6 +62,7 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
    text-decoration: none
    color: black
    position: relative
+   font-family: Montserrat-SemiBold
    &::before
     content: ""
     height: 100%
@@ -113,12 +126,12 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     cursor: pointer
   &__item:hover
     box-shadow: $box-shadow
-    i
-      font-size: 21px
+  i
+    font-size: 21px
 
 .title
   font-size: 72px
-  font-weight: 700
+  font-family: Montserrat-SemiBold
 
 .right-wrapper
   position: absolute
@@ -245,23 +258,51 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     font-weight: 600
 
 .section-learning
-  min-height: 700px
+  min-height: 630px
   background: $background-color
   overflow: hidden
   &__container
     display: flex
     justify-content: space-between
     align-items: center
+    padding-top: 50px
   &__right-wrapper
     max-width: 500px
     position: relative
+    .title
+      line-height: 105%
+      margin-bottom: 20px
   &__left-wrapper
     position: relative
+    .title
+      position: relative
+      z-index: 2
+      left: 150px
   &__first-ring
     position: absolute
-    top: 140px
-    left: 285px
+    top: -100px
+    left: 100px
   &__second-ring
     position: absolute
     top:  -120px
     right: -300px
+  &__img
+    position: absolute
+    top: -20px
+    left: 0
+    z-index: 1
+  &__text
+    margin-bottom: 30px
+
+.footer
+  &__container
+    min-height: 275px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    position: relative
+  &__img
+    position: absolute
+    left: 0
+    bottom: 0
+  &__wrapper
