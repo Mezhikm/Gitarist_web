@@ -12,11 +12,88 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/responsive_style.css">
     <title>Портфолио гитариста</title>
   </head>
   <body>
     <!-- Главная секция -->
-    <section class="main-section">
+    <section class="main-section" id="main">
       <div class="container main-section__nav-container">
         <header class="main-section__header">
           <img
@@ -27,9 +104,9 @@
         </header>
         <nav class="main-section__nav nav-menu">
           <ul class="nav-menu__list">
-            <li class="nav-menu__list-item"><a href="#">Обо мне</a></li>
-            <li class="nav-menu__list-item"><a href="#">Занятия</a></li>
-            <li class="nav-menu__list-item"><a href="#">Запись</a></li>
+            <li class="nav-menu__list-item"><a href="#main">Обо мне</a></li>
+            <li class="nav-menu__list-item"><a href="#courses">Занятия</a></li>
+            <li class="nav-menu__list-item"><a href="#learning">Запись</a></li>
           </ul>
         </nav>
       </div>
@@ -69,13 +146,13 @@
       </div>
       <div class="main-section__second-ring ring ring_big"></div>
     </section>
-    <section class="section-courses">
+    <section class="section-courses" id="courses">
       <div class="section-courses__container container">
         <h2 class="section-courses__title title">Преподаю</h2>
         <div class="section-courses__cards-box">
           <div
             class="section-courses__cards-item cards-item cards-item_grey"
-            onmouseenter="new Audio('sounds/elektrogitara.mp3').play()"
+            onclick="new Audio('sounds/elektrogitara.mp3').play()"
           >
             <img
               src="img/Электро-гитара 1.png"
@@ -86,7 +163,7 @@
           </div>
           <div
             class="section-courses__cards-item cards-item cards-item_orange"
-            onmouseenter="new Audio('sounds/akusticheskaya.mp3').play()"
+            onclick="new Audio('sounds/akusticheskaya.mp3').play()"
           >
             <img
               src="img/Акустика-гитара 1.png"
@@ -100,7 +177,7 @@
           </div>
           <div
             class="section-courses__cards-item cards-item cards-item_blue"
-            onmouseenter="new Audio('sounds/ukulele.mp3').play()"
+            onclick="new Audio('sounds/ukulele.mp3').play()"
           >
             <img
               src="img/Укулелли-гитара 1.png"
@@ -159,7 +236,7 @@
         <div class="section-courses__second-ring ring ring_white"></div>
       </div>
     </section>
-    <section class="section-learning">
+    <section class="section-learning" id="learning">
       <div class="section-learning__container container">
         <div class="section-learning__left-wrapper">
           <img
@@ -195,10 +272,10 @@
     </section>
     <footer class="footer">
       <div class="footer__container container">
-        <img src="/img/Гриф 1.png" alt="гриф">
+        <img src="/img/Гриф 1.png" alt="гриф" />
         <div class="footer-wrapper">
           <h2 class="footer__title title">Запишись на пробный урок</h2>
-           <div class="footer__icon-box icons">
+          <div class="footer__icon-box icons">
             <div class="icons__item"><i class="bi bi-microsoft-teams"></i></div>
             <div class="icons__item"><i class="bi bi-wechat"></i></div>
             <div class="icons__item"><i class="bi bi-telegram"></i></div>
