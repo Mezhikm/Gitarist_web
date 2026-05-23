@@ -62,6 +62,42 @@
     &__right_wrapper
       max-width: 80%
       margin: 0 auto
+  .footer
+    &__img
+      height: 60%
+    &__title
+      font-size: 5rem
 
 @media ( max-width: 590px  )  
+  .left-wrapper
+    &__img
+      display: none
+  .main-section
+    &__first-ring
+      display: none
+  .right-wrapper
+    left: 12rem
+  .cards-item
+    &__text
+      transform: rotate(90deg)
+      width: 30rem
+  .footer
+    &__img
+      display: none
+    &__container
+      text-align: center
+    &__wrapper
+      width: 100%
+    &__icon-box
+      justify-content: center
+    
+@media ( max-width: 480px  )
+  .right-wrapper
+    left: 7rem
+  .cards-item
+    height: 26rem
+    &__text
+      width: 30rem
+      font-size: 3rem
+      top: 10rem
   
